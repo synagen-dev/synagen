@@ -62,5 +62,11 @@ $( "div.gradualHover" ).mouseleave(
 		}
 	});
 </script>
+
+<script>
+  var chatid = 'synagen';
+</script>
+<script src="https://synagen.net/chatbot/chat.js"></script>
+
 </body>
 </html>

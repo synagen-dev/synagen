@@ -33,11 +33,6 @@ $sender_email     = 'admin@synagen.net';    //email address to which debug email
   <script src="Script.js"></script>
 
 <script>
-  var chatid = 'synagen';
-</script>
-<script src="https://synagen.net/chatbot/chat.js"></script>
-
-<script>
 $(document).ready(function(){  
 	<?php 
 	if (isset($subtitle) && strlen($subtitle)>0) echo "document.getElementById('subheader1').innerHTML='$subtitle'; 
