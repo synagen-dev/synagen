@@ -1,0 +1,10 @@
+/opt/bitnami/apache2/htdocs/synagen/getsupport.php from=elitegold.ts@gmail.com, name=Tezza de Gr8,  message= <BR>
+/opt/bitnami/apache2/htdocs/synagen/getsupport.php, at line92, email=elitegold.ts@gmail.com, 
+/opt/bitnami/apache2/htdocs/synagen/getsupport.php, 102,  $EmailMsg= Contact through Synagen web site regarding customer website support services<BR>
+		Email:elitegold.ts@gmail.com<BR>
+		Support Level: silver <BR>
+		Tezza de Gr8 wrote the following:<BR>comments line 1<BR>line 2<BR>line 3,
+/opt/bitnami/apache2/htdocs/synagen/getsupport.php, line 115, sendEmail(), Email sent ok
+/opt/bitnami/apache2/htdocs/synagen/getsupport.php, at line123, After sending email -  message=Message sent ok
+/opt/bitnami/apache2/htdocs/synagen/getsupport.php, line 148, Email2 sent ok
+/opt/bitnami/apache2/htdocs/synagen/getsupport.php, at line155, After sending email2 -  message=Message received. You will be contacted shortly. Thank you.

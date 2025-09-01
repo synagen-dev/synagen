@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<!--#include virtual="header.html"-->
+<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen">
+
+<TITLE>Synagen Software Development</TITLE>
+</HEAD>
+<BODY leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+
+<!-- Begin Table -->
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%" align=left valign=top>
+<TBODY>
+  <TR class=mainheader CELLPADDING="0" CELLSPACING="0"> <!-- First row is for the page header. Only thing that can go here is menu options -->
+    <TD COLSPAN="2"  valign=bottom align=left height=152px CELLPADDING="0" CELLSPACING="0"> 
+          <BR><BR><BR>
+    </TD>
+  </TR>
+  <TR valign=TOP align=LEFT CELLPADDING="0" CELLSPACING="0"> <!-- This row is the entire body and must extend to the bottom -->
+    <TD COLSPAN="1" WIDTH="130px" valign=TOP align=left CELLPADDING="0" CELLSPACING="0" > <!-- Left page column -->
+      <BR><BR><BR>
+      <TABLE class=footer valign=top >
+      <tbody>
+        <tr height="20px" class=footer><TD width="130px" class=footer valign=middle align=center><p class=footer><a href=index.php class=footer style="cursor:hand; border:0;">Home</a></p></td></tr>
+        <TR height="10px"><TD></td></tr>
+      </TBODY>
+      </TABLE>    
+    </TD>
+
+    <TD ROWSPAN="1" COLSPAN="1" valign=top style="padding:10;"> <!-- Main body of page -->
+            <DIV align=LEFT><p class=subtitle>About Us</p></div>
+            <div class=text>
+            Synagen Systems Ltd. is a global software company providing state-of-the-art software solutions to 
+            all types of business and industry.
+            <BR><BR>
+            We source the most cost-effective development technologies and resources from around the globe and pass on these cost savings to you.
+            <BR><BR>
+            Services we can provide to you include :
+            <ul>
+            <li><P class=text>Off-the-shelf software package - either standalone or web-based.
+            <li><P class=text>Off-the-shelf package with tailored modifications.
+            <li><P class=text>A fully custom-made system tailored to your exact needs, at very competitive prices. 
+            <li><P class=text>Business Analysis and system design.
+            <li><P class=text>Project Management.
+            </ul>
+            We can be an <em><b>independent</b></em> component in your development project to ensure it stays on track and ensure
+            all parties provide what you intend them to provide.
+            <BR><BR>
+		All projects imbue our core values of : Independance, Quality, Value, Efficiency, Integrity, Accuracy, Professionalism. 
+            </div>
+            <BR><BR><BR><BR> 
+            We are the producers of:
+            <P><a href="http://www.theclubwebsite.com">www.TheClubWebsite.com</a> - Membership and accounting management for small to large clubs.
+            <P><a href="http://www.academy-accounting.com">www.Academy-Accounting.com</a> - Standalone accounting package for small business and education.
+    </td>
+  </TR>
+</TBODY>
+</TABLE>
+</BODY>
+</HTML>

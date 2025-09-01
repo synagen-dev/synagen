@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="img/carcloud_icon.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" value="Global IT consulting services">
+  <meta name="description" value="Global IT/ICT Consulting services - Your ICT hitman!">
+  <meta name="keywords" value="IT consulting,ICT consulting,IT consultant,ICT consultant,project management,IT development standards,risk management,business analysis,IT,ICT" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="style_default.css" rel="stylesheet" type="text/css">
+
+  <script src="Script.js"></script>
+  <script>
+$(document).ready(function(){   
+		
+            var scroll_pos = 0;
+            $(document).scroll(function() { 
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 500 || scroll_pos<100) {
+                    $(".navbar").css('background-color', 'black');
+                } else {
+                    $(".navbar").css('background-color', 'transparent');
+                }
+            });
+});
+var hover_section='';	
+var hover_id='';
+var myTimer;
+var red=255;
+var green=255;
+var blue=255;
+function hover_blend(section){
+	// Initiates the gradual change of format at start of a hover
+	hover_section=section;
+	hover_id=document.getElementById(section);
+	myTimer=setInterval(hover_increment, 30);
+	red=255;
+	green=255;
+	blue=255;
+}
+function hover_increment(){
+	red=red - 2;
+	green=green -2;
+	blue--;
+	hover_id.style.background="rgb("+red+","+green+","+blue+")";
+	hover_id.style.borderColor="rgb("+(red-50)+","+(green-50)+","+(blue-50)+")";
+	if (red<=220) hover_end();
+}
+function hover_end(){
+	clearInterval(myTimer);
+	// hover_id.addclass('listHighlighter');
+}
+function hover_exit(){
+	clearInterval(myTimer);
+	hover_id.style.background='transparent';
+	hover_id.style.borderColor='transparent';
+}
+</script>
+
+
+</head>
+<body  data-spy="scroll" data-target=".navbar" data-offset="100">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container test">
+    <div class="collapse navbar-collapse test" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right test">
+	  <li class="test"><a href="index.php">HOME</a></li>
+		<li class="test"><a href="about.php">About Us</a></li>
+        <li class="test"><a href="software.php">COTS Software</a></li>
+        <li class="test"><a href="consulting.php">Consulting</a></li>
+		<li class="test"><a href="development.php">Software Development</a></li>
+		<a href="contact.php"><button class="btn btn-info navbar-btn hidden-sm hidden-md">CONTACT</button></a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<center>
+<!-- Jumbotron Header -->
+
+<div id="top" class="jumbotron text-center star" style="height:500px; background-color:#c0d0e0; background-image:url('images/splash1_1950x700px_b.jpg'); background-position:center;">
+  <img style="padding-top:50px;" src="images/splash1_1950x700px_b.jpg" width="50%">
+  <h1 style="position:relative; top:-200px; z-index:1001; color:white;">Synagen Systems</h1>
+  <h1 style="position:relative; top:-290px; z-index:1000; color:gray;">Synagen Systems</h1>
+</div>
+
+
+
+<div  class="container-fluid text-center bg-grey">
+	<div class=" text-center">
+		<h1>Your Global ICT Consultancy Partner</h1>
+		<h4>Improving your ICT efficiency and achieving your productivity goals.
+		</h4>
+	</div>
+	<div class="row ">
+
+	   <div class="col-sm-4">
+		 <a href="software.php" class="scroll"> <i class="fa fa-random" style="font-size:50px; color:rgb(192, 192, 192);"></i></a>
+		  <h4>Cloud Migration</h4>
+		  <p style="text-align:left;">Thinking of moving your in-house systems to cloud based? 
+		  Synagen can design, manage and implement migration of your in-house systems to cloud services (AWS, Azure or Google). Our systems run entirely on Google Cloude Services.
+		  Talk to us today to see just how we can help.</p>
+		</div>
+
+	   <div class="col-sm-4 gradualHover" id="consulting" onmouseover="hover_blend('consulting');" onmouseout="hover_exit('consulting');" onClick="window.location.href='consulting.php'">
+			<a href="#" class="scroll"> <i class="fa fa-random" style="font-size:50px; color:rgb(192, 192, 192);"></i></a>
+			<h4>ICT Project Management and Consulting</h4>
+			<p style="text-align:left;">Having issues increasing efficiency of your development team? Major system implementation coming?
+			Need external, independent, ICT consulting and/or project management expertese? Things not going as well as they could with rolling out IT systems?</p>
+			<p style="text-align:left;">We have 40 years experience in software development, business analysis, project management, problem solving and team leadership.</p>
+			<p style="text-align:left;">Let us get your next, or current, major project on the right path and achieve amazing results.</p>
+			<button class="btn btn-lg btn-info ">Click for more information</button>
+		</div>
+
+	   <div class="col-sm-4">
+		 <a href="software.php" class="scroll"> <i class="fa fa-random" style="font-size:50px; color:rgb(192, 192, 192);"></i></a>
+		  <h4>Security Evaluation and Support</h4>
+		  <p style="text-align:left;">How secure are your systems? We can provide one-off or on-going security support services. Talk to us today to see just how we can help.</p>
+		</div>
+
+	</div>
+	<div class="row ">
+		<div class="col-sm-4">
+		  <a href="software.php" class="scroll"><i class="fa fa-file-code-o" style="font-size:50px; color:rgb(192, 192, 192);"></i></a>
+		  <h4>Off-the-Shelf Software</h4>
+		  <p style="text-align:left;">Synagen Systems have developed a range of quality out of the box systems to help you manage your business. Our software covers a range of industries and fields and is ready to start using today.</p>
+		</div>
+		<div class="col-sm-4">
+		  <a href="development.php" class="scroll"><i class="fa fa-cogs" style="font-size:50px; color:rgb(192, 192, 192);"></i></a>
+		  <h4>Software Development</h4>
+		  <p style="text-align:left;">Need custom software built or want to make additions or modifications to an existing application? 
+		  Synagen are well placed to help you achieve your goals.</p>
+		  <p style="text-align:left;">Our services include project management, dev team lead, change management, documentation, specifications, design and implementation, all at a fixed cost.</p>
+		</div>
+		<div class="col-sm-4">
+		 <a href="software.php" class="scroll"> <i class="fa fa-random" style="font-size:50px; color:rgb(192, 192, 192);"></i></a>
+		  <h4>Integration</h4>
+		  <p style="text-align:left;">Synagen can also assist you with integrating your current systems into our own, or others. Talk to us today to see just how we can help.</p>
+		</div>
+	</div>
+	<br>
+	<a href="contact.php"><button class="btn btn-lg btn-success slideanim">Contact us now to discuss your requirements</button></a>
+	<br><br>
+</div>
+  
+
+
+<div class="jumbotron-footer text-center">
+<div class="container">
+ <div class="row">
+ <div class="col-sm-4">
+
+</div>
+  <div class="col-sm-3">
+ 
+</div>
+  <div class="col-sm-5">
+  <center>
+   <ul class="list-group">
+  <li class="list-group-item" style="background-color:white !important;"><b>Contact Us:</b></li>
+  </ul>
+<?php
+if (strlen($message3)>0)echo '<H4 style="color:#ffe0d0;">'.$message3.'</h4>';
+?>
+<form  name=form method="post" action="index.php">
+   <div class="form-group">
+    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
+  </div>
+    <div class="form-group">
+    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Surname">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+  </div>
+   <div class="form-group">
+  <select class="form-control" id="sell" name="sel1">
+    <option value="Software">General</option>
+    <option value="International">Software</option>
+    <option value="IT ">Development</option>
+    <option value="Software">Support</option>
+	<option value="Software">CallTaker</option>
+	<option value="Software">The Club Website</option>
+  </select>
+</div>
+   <div class="form-group">
+  <textarea class="form-control" rows="3" id="comment" name="comment" placeholder="Message"></textarea>
+</div>
+  <button id="submit" type="submit" name="submit" class="btn btn-info">Contact</button><br>
+</form>
+  </center>
+ </div>
+</div>
+<div class="row">
+ <div class="col-sm-12">
+  <img src="img/carcloud_icon_light.png" width="20%">
+  <p>Website&#169; 2010 - 2017 Synagen. admin@Synagen.net All rights reserved</p><br>
+  <i class="fa fa-facebook-official" style="font-size:36px; color:white;"></i>
+  <i class="fa fa-google-plus" style="font-size:36px; color:white; padding-left:10px;"></i>
+  <i class="fa fa-linkedin" style="font-size:36px; color:white; padding-left:10px;"></i>
+  </div>
+  </div>
+  </div>
+</div>
+
+</body>
+
+</html>

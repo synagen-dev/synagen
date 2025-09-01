@@ -1,0 +1,241 @@
+body {
+	background-color: white;
+	color: #305080;
+	font: normal 19px Roboto,Arial,Tahoma,Calibri, Arial,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Nueue","Noto Sans";
+	font-weight:400;
+}
+
+#pageheader1a	{
+	width:100%;
+	max-width:100%;
+	background-color: WHITE;	
+	height:150px;
+	z-index:0; 
+}
+#pageheader1	{
+	width:100%;
+	max-width:100%;
+	height:100%;
+	z-index:10; 
+}
+#pageheaderimg	{
+	width:100%;
+	max-width:100%;
+	background-color: #000050;	
+	background-image:url("images/technology-wallpaper-4._1911x292b.jpg"); 
+	background-repeat:no-repeat;
+	background-position:center top;
+	height:200px;
+	z-index:20; 
+	opacity:0.0;
+	max-width:100%;
+}
+
+.displayblock{
+	background-color: #fafaff;
+	padding:15px;
+	overflow:hidden;
+	border:1px solid #f0f0f0;
+}
+
+@media only screen and (min-width:701px) {
+
+	#header1{
+		font-size:3.5rem !important; 
+		position:relative; 
+		top:-200px; 
+		z-index:1001; 
+		color:white;
+		#font: normal Tahoma,Calibri, Arial !important;
+	}
+	#header2{
+		font-size:3.5rem !important; 
+		position:relative; 
+		top:-265px; 
+		left:1px;
+		z-index:1000; 
+		color:gray;
+		#font: normal Tahoma,Calibri, Arial !important;
+	}
+	
+
+	#subheader1{
+		font-size:2.2rem !important; 
+		position:relative; 
+		top:-230px; 
+		z-index:1001; 
+		color:#a0e0ff;
+		#font: normal Tahoma,Calibri, Arial !important;
+	}
+	#subheader2{
+		font-size:2.2rem !important; 
+		position:relative; 
+		top:-268px; 
+		left:1px;
+		z-index:1000; 
+		color:BLACK;
+		#font: normal Tahoma,Calibri, Arial !important;
+	}
+	.displayblock{
+		background-color: #fafaff;
+		padding:15px;
+		height:500px;
+		overflow:hidden;
+		border:1px solid #f0f0f0;
+	}
+	.displayblock h4{
+		font-size: 2rem;
+		font-weight:bold;
+	}
+	.displayblock img{
+		max-width:95%;
+		margin-bottom:15px;
+	}
+}
+@media only screen and (max-width:700px) {
+  /* For mobile phones: */
+  .numenu, .numain, .preview_box {
+    width:100% !important; 
+    margin:0;
+    clear:both;
+  }
+  h1 {font-size:2.4rem !important;}
+  h2 {font-size:2rem !important;}
+  h3 {font-size:1.8rem !important;}
+  h4 {font-size:1.5rem !important;}
+ 
+	#header1{
+		height:0;
+		display:none;
+		font-size:0;
+	}
+	#header2{
+		font-size:2.5rem !important; 
+		z-index:1000; 
+		color:gray;
+		position:relative; 
+		top:20px; 
+	}
+	#subheader1{
+		font-size:0px !important; 
+		position:absolute; 
+		top:0px; 
+		left:0px;
+		z-index:1002; 
+		color:transparent;
+		line-height:0px !important;
+	}
+	#subheader2{
+		font-size:0px !important; 
+		position:relative; 
+		top:0px; 
+		left:0px;
+		z-index:1003; 
+		color:transparent;
+		line-height:0px !important;
+	}  
+	.displayblock{padding:5px !important; margin:5px !important; max-height:350px !important;}
+	.displayblock img{width:0 !important; height:0 !important; display:none !important; margin-bottom:0  !important;}
+	#top {
+		height:100px !important;
+		background-color: #e0e0f0 !important;
+		background-image: none !important;
+	}
+	#top img {width:0 !important; height:0 !important; display:none !important; max-height:0 !important; max-width:0 !important;
+		margin:0 !important; padding:0 !important; 		
+	}
+	#top h1 {position:absolute !important; top:50px !important; color:#305080 !important;}
+ 
+	#content{
+		width:100% !important; 
+		margin:0;
+		max-width:100%  !important;
+	}  
+	
+  .numenu a{ width:100% !important; }
+  #pageheader1a{ width:100%; margin:0; clear:both;  max-width:100% !important;}
+  #pageheaderimg{width:0; height:0; background-color:white;}
+  #pageheaderimg img{width:0; height:0;}
+  #outerframe{ width:100%; margin:0 0 10px 0; max-width:100% !important;}
+  #thumbnails{  margin:0 0 10px 0; max-width:100% !important;}
+  #popup_window{ max-width:100%;}
+  #pageheaderText{max-width:100%; margin:0;}
+  #header-bg{position:absolute; top:0; left:0; width:100%; margin:0; opacity:1.0; background-color:white;}
+}
+@media only screen and (max-width:450px) {
+  #pageheaderText h1{ font-size:24pt;}
+  #pageheaderText h2{ font-size:18pt;}
+}
+
+#width:100%;{
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.formprompt{
+	text-align:left;
+	width:20%;
+}
+.formfield{
+	text-align:left;
+	width:70%;
+}
+.errormessage{
+	color:RED;
+	font-size: 1.2rem;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.gradualHover {
+	padding: 10px;
+	border:2px solid transparent;
+	cursor:pointer !important; 
+	border-radius: 6px;
+}
+.gradualHover:hover {
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25),  0 10px 10px 0 rgba(0, 0, 0, 0.25) !important;
+}
+.listHighlighter {
+	padding: 10px;
+	border:2px solid transparent;
+	cursor:pointer !important; 
+	border-radius: 6px;
+}
+.listHighlighter:hover{
+	background-color:#f0faff !important;
+	border-color:#80c0de !important;
+}
