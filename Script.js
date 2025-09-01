@@ -151,13 +151,15 @@ function hover_end(){
 }
 //Detect if otherNode is contained by refNode
 function isParent(refNode, otherNode) {
-	var parent = otherNode.parentNode;
-	do {
-		if (refNode == parent) {
-			return true;
-		} else {
-			parent = parent.parentNode;
-		}
-	} while (parent);
+	if(otherNode){
+		var parent = otherNode.parentNode;
+		do {
+			if (refNode == parent) {
+				return true;
+			} else {
+				parent = parent.parentNode;
+			}
+		} while (parent);
+	}
 	return false;
 }
